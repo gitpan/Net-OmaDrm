@@ -2,7 +2,7 @@ package Net::OmaDrm;
 
 use strict;
 use warnings;
-#use diagnostics;
+use diagnostics;
 
 #use MIME::Base64;
 
@@ -28,10 +28,11 @@ $Net::OmaDrm::VERSION=0.1;
 
 =head1 NAME
 
-Net::OmaDrm - Format the content-type with OMA DRM content-type
+ Net::OmaDrm - Perl Module to encapsulate OMA DRM format for a media type
 
-  This module support the OMA DRM method of sending content to the handset.
-  A device will declare support for OMA-DRM by including one of the following sets of strings in the http accept header:
+  Open Mobile Alliance (OMA) is a standards body founded by telecommunication companies which develops open standards for the mobile phone industry. In order to ensure interoperability across all implementations for Digital Rights Management (DRM), the OMA provides DRM specifications so that content providers, operators and mobile phone manufacturers can easily integrate the DRM solution as smoothly as possible.
+
+   This module supports the OMA DRM version 1.0 method of sending content to the handset. A device will declare the support for OMA-DRM by including one of the method which is provided by this module:
 
     > Forward-lock
         * Content-Type
